@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83894e4cf4ee32c06aa466a42b1c96f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_83894e4cf4ee32c06aa466a42b1c96f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83894e4cf4ee32c06aa466a42b1c96f4 = L.map(
+                "map_83894e4cf4ee32c06aa466a42b1c96f4",
+                {
+                    center: [-34.610247576252725, -58.44713287449028],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c6d8b4425d36fb6e8ad50b81a0ab51e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9c6d8b4425d36fb6e8ad50b81a0ab51e.addTo(map_83894e4cf4ee32c06aa466a42b1c96f4);
+        
+    
+            var marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_43948890fc335349c93c1b1c0ce0885b = L.marker(
+                [-34.5453056273984, -58.4497663377443],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_868696b31015f9f74257c51c8c8077c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3410b90b340de8c2835de72d0fbe583 = $(`<div id="html_c3410b90b340de8c2835de72d0fbe583" style="width: 100.0%; height: 100.0%;">{'long': -58.4497663377443, 'lat': -34.5453056273984, 'id': 1, 'club': 'Club Atletico River Plate', 'estadio': 'Monumental Antonio Vespucio Liberti', 'web': 'http://www.cariverplate.com.ar/', 'facebook': 'https://www.facebook.com/riverplateoficial', 'twitter': 'https://twitter.com/@CARPoficial', 'contacto': '54 11) 4789 1200', 'objeto': 'Estadio', 'calle': 'Av. Figueroa Alcorta', 'altura': 7597.0, 'barrio': 'Belgrano', 'comuna': 'Comuna 13', 'codigo_postal': 1428.0, 'codigo_postal_argentino': 'C1428BCL'}</div>`)[0];
+                popup_868696b31015f9f74257c51c8c8077c6.setContent(html_c3410b90b340de8c2835de72d0fbe583);
+            
+        
+
+        marker_43948890fc335349c93c1b1c0ce0885b.bindPopup(popup_868696b31015f9f74257c51c8c8077c6)
+        ;
+
+        
+    
+    
+            var marker_1bdf141e7715c97aa9f136c20eeea415 = L.marker(
+                [-34.6353302822112, -58.5206633023988],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_6ad25ed7846a757ef31ab8bd1e9a1483 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c372024d854ad0f2bb359fe4729a2f90 = $(`<div id="html_c372024d854ad0f2bb359fe4729a2f90" style="width: 100.0%; height: 100.0%;">{'long': -58.5206633023988, 'lat': -34.6353302822112, 'id': 2, 'club': 'Club Atlético Vélez Sarsfield', 'estadio': 'José Amalfitani', 'web': 'http://www.velezsarsfield.com.ar/', 'facebook': 'https://www.facebook.com/velezsarsfield', 'twitter': 'https://twitter.com/Velez', 'contacto': '(54-11) 4641-5653/5763/4014', 'objeto': 'Estadio', 'calle': 'Av. Juan B. Justo', 'altura': 9200.0, 'barrio': 'Liniers', 'comuna': 'Comuna 9', 'codigo_postal': 1408.0, 'codigo_postal_argentino': 'C1408AKU'}</div>`)[0];
+                popup_6ad25ed7846a757ef31ab8bd1e9a1483.setContent(html_c372024d854ad0f2bb359fe4729a2f90);
+            
+        
+
+        marker_1bdf141e7715c97aa9f136c20eeea415.bindPopup(popup_6ad25ed7846a757ef31ab8bd1e9a1483)
+        ;
+
+        
+    
+    
+            var marker_1ca745a6e1b7e267982469dec3fba60e = L.marker(
+                [-34.6357361054272, -58.3647578638825],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_50c04b07c839ac88773feb0960349835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b93ff7aa7afa37669d29ceb348b28f1 = $(`<div id="html_7b93ff7aa7afa37669d29ceb348b28f1" style="width: 100.0%; height: 100.0%;">{'long': -58.3647578638825, 'lat': -34.6357361054272, 'id': 3, 'club': 'Club Atlético Boca Juniors', 'estadio': 'Alberto J. Armando', 'web': 'http://www.bocajuniors.com.ar/', 'facebook': 'https://www.facebook.com/BocaJuniors', 'twitter': 'https://twitter.com/BocaJrsOficial', 'contacto': '5777-1200', 'objeto': 'Estadio', 'calle': 'Brandsen', 'altura': 805.0, 'barrio': 'Boca', 'comuna': 'Comuna 4', 'codigo_postal': 1161.0, 'codigo_postal_argentino': 'C1161AAQ'}</div>`)[0];
+                popup_50c04b07c839ac88773feb0960349835.setContent(html_7b93ff7aa7afa37669d29ceb348b28f1);
+            
+        
+
+        marker_1ca745a6e1b7e267982469dec3fba60e.bindPopup(popup_50c04b07c839ac88773feb0960349835)
+        ;
+
+        
+    
+    
+            var marker_519b84c1fc8beb85e552573d16d6132b = L.marker(
+                [-34.6434616828113, -58.3965659311413],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_5988efee831aaf1312d931b500a08335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4815e8487c31d497be5d8af79790938 = $(`<div id="html_d4815e8487c31d497be5d8af79790938" style="width: 100.0%; height: 100.0%;">{'long': -58.3965659311413, 'lat': -34.6434616828113, 'id': 4, 'club': 'Club Atlético Huracán', 'estadio': 'Tomás Adolfo Ducó', 'web': 'http://www.cahuracan.com/', 'facebook': 'https://www.facebook.com/CAHuracan', 'twitter': 'https://twitter.com/CAHuracan', 'contacto': '4911-9313/0757', 'objeto': 'Estadio', 'calle': 'Av. Amancio Alcorta', 'altura': 2570.0, 'barrio': 'Parque Patricios', 'comuna': 'Comuna 4', 'codigo_postal': 1437.0, 'codigo_postal_argentino': 'C1437HTN'}</div>`)[0];
+                popup_5988efee831aaf1312d931b500a08335.setContent(html_d4815e8487c31d497be5d8af79790938);
+            
+        
+
+        marker_519b84c1fc8beb85e552573d16d6132b.bindPopup(popup_5988efee831aaf1312d931b500a08335)
+        ;
+
+        
+    
+    
+            var marker_217cfe10845353a8d6daf00d8921cb98 = L.marker(
+                [-34.652037774849, -58.4402206537969],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_86698326101dcbb0663104ff49cd5ba6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dd58add6323f33792e48c9db352cdec = $(`<div id="html_0dd58add6323f33792e48c9db352cdec" style="width: 100.0%; height: 100.0%;">{'long': -58.4402206537969, 'lat': -34.652037774849, 'id': 5, 'club': 'Club Atlético San Lorenzo de Almagro', 'estadio': 'Pedro Bidegain', 'web': 'http://www.sanlorenzo.com.ar/', 'facebook': 'https://www.facebook.com/SanLorenzo', 'twitter': 'https://twitter.com/SanLorenzo', 'contacto': '4016-2600.', 'objeto': 'Estadio', 'calle': 'Av. Perito Moreno y Varela', 'altura': nan, 'barrio': 'Flores', 'comuna': 'Comuna 7', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_86698326101dcbb0663104ff49cd5ba6.setContent(html_0dd58add6323f33792e48c9db352cdec);
+            
+        
+
+        marker_217cfe10845353a8d6daf00d8921cb98.bindPopup(popup_86698326101dcbb0663104ff49cd5ba6)
+        ;
+
+        
+    
+    
+            var marker_61ccfacbe699e316c6e24e57a5c053e5 = L.marker(
+                [-34.6578677846918, -58.4645255572806],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_5c32ae12b3da81d09ba1e48322239d8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f39303d06fd22b7497e51323bbbd87d6 = $(`<div id="html_f39303d06fd22b7497e51323bbbd87d6" style="width: 100.0%; height: 100.0%;">{'long': -58.4645255572806, 'lat': -34.6578677846918, 'id': 6, 'club': 'Club Deportivo Español de Buenos Aires', 'estadio': 'Estadio Nueva España', 'web': 'http://www.cde.com.ar/', 'facebook': 'https://www.facebook.com/pages/Club-Deportivo-Espa%C3%B1ol-Oficial/165965500136401?fref=ts', 'twitter': 'https://twitter.com/prensacde', 'contacto': '4619-1515/1516', 'objeto': 'Estadio', 'calle': 'Santiago de Compostela', 'altura': 3801.0, 'barrio': 'Parque Avellaneda', 'comuna': 'Comuna 9', 'codigo_postal': 1407.0, 'codigo_postal_argentino': 'C1407MDB'}</div>`)[0];
+                popup_5c32ae12b3da81d09ba1e48322239d8d.setContent(html_f39303d06fd22b7497e51323bbbd87d6);
+            
+        
+
+        marker_61ccfacbe699e316c6e24e57a5c053e5.bindPopup(popup_5c32ae12b3da81d09ba1e48322239d8d)
+        ;
+
+        
+    
+    
+            var marker_283c569c9a398f401771d7702898042d = L.marker(
+                [-34.6680548186919, -58.4997533034693],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_1066885d2a72f547467a5f11f3ab1efb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_594f206e412ae118df13b15f54e94833 = $(`<div id="html_594f206e412ae118df13b15f54e94833" style="width: 100.0%; height: 100.0%;">{'long': -58.4997533034693, 'lat': -34.6680548186919, 'id': 7, 'club': 'Club Atlético Nueva Chicago', 'estadio': 'República de Mataderos', 'web': 'http://canuevachicago.com.ar', 'facebook': 'https://www.facebook.com/PrensaNuevaChicago', 'twitter': 'https://twitter.com/prensachicago', 'contacto': '4687-2538', 'objeto': 'Estadio', 'calle': 'Justo Suárez', 'altura': 6900.0, 'barrio': 'Mataderos', 'comuna': 'Comuna 9', 'codigo_postal': 1440.0, 'codigo_postal_argentino': 'C1440BHH'}</div>`)[0];
+                popup_1066885d2a72f547467a5f11f3ab1efb.setContent(html_594f206e412ae118df13b15f54e94833);
+            
+        
+
+        marker_283c569c9a398f401771d7702898042d.bindPopup(popup_1066885d2a72f547467a5f11f3ab1efb)
+        ;
+
+        
+    
+    
+            var marker_740b166bed3f33a6c866c71c855e2933 = L.marker(
+                [-34.6062764076556, -58.4730282035083],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_fbf4733b954d57b87a83d5c15af4503f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e036c8393e59f770b042552976bf3742 = $(`<div id="html_e036c8393e59f770b042552976bf3742" style="width: 100.0%; height: 100.0%;">{'long': -58.4730282035083, 'lat': -34.6062764076556, 'id': 8, 'club': 'Asociación Atlética Argentinos Juniors', 'estadio': 'Diego Armando Maradona', 'web': 'https://www.argentinosjuniors.com.ar/', 'facebook': 'https://www.facebook.com/AAAJOficial', 'twitter': 'https://twitter.com/PrensaAAAJ', 'contacto': '4581-1243', 'objeto': 'Estadio', 'calle': 'Gavilan', 'altura': 2151.0, 'barrio': 'Villa Gral. Mitre', 'comuna': 'Comuna 11', 'codigo_postal': 1416.0, 'codigo_postal_argentino': 'C1416ACS'}</div>`)[0];
+                popup_fbf4733b954d57b87a83d5c15af4503f.setContent(html_e036c8393e59f770b042552976bf3742);
+            
+        
+
+        marker_740b166bed3f33a6c866c71c855e2933.bindPopup(popup_fbf4733b954d57b87a83d5c15af4503f)
+        ;
+
+        
+    
+    
+            var marker_5d5516475cfb6fe5a4a3fd5bffa48cff = L.marker(
+                [-34.6185840408399, -58.4476874806095],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_f1be84d39ca3e9ce080396b9d3bb9bc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef03375ccfeba50b0ca6e0bbc94159a8 = $(`<div id="html_ef03375ccfeba50b0ca6e0bbc94159a8" style="width: 100.0%; height: 100.0%;">{'long': -58.4476874806095, 'lat': -34.6185840408399, 'id': 9, 'club': 'Club Ferro Carril Oeste', 'estadio': 'Arquitecto Ricardo Etcheverri', 'web': 'http://www.ferrocarriloeste.org.ar/', 'facebook': 'https://www.facebook.com/FerroOficial', 'twitter': 'https://twitter.com/FerroOficial', 'contacto': '4431-8282', 'objeto': 'Estadio', 'calle': 'Av. Avellaneda', 'altura': 1240.0, 'barrio': 'Caballito', 'comuna': 'Comuna 6', 'codigo_postal': 1405.0, 'codigo_postal_argentino': 'C1405CNZ'}</div>`)[0];
+                popup_f1be84d39ca3e9ce080396b9d3bb9bc2.setContent(html_ef03375ccfeba50b0ca6e0bbc94159a8);
+            
+        
+
+        marker_5d5516475cfb6fe5a4a3fd5bffa48cff.bindPopup(popup_f1be84d39ca3e9ce080396b9d3bb9bc2)
+        ;
+
+        
+    
+    
+            var marker_53dcfa8221cad34af19fc419c0bd6aa7 = L.marker(
+                [-34.6165260649432, -58.4978449274547],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_900cfc67b41f341d87faada2fc12e241 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9960a0acb61125458d983c80d36377b8 = $(`<div id="html_9960a0acb61125458d983c80d36377b8" style="width: 100.0%; height: 100.0%;">{'long': -58.4978449274547, 'lat': -34.6165260649432, 'id': 10, 'club': 'Club Atlético All Boys', 'estadio': 'Estadio Islas Malvinas', 'web': 'http://www.caallboys.com.ar/', 'facebook': 'https://www.facebook.com/caallboysoficial', 'twitter': 'https://twitter.com/caallboys', 'contacto': '4639-8688', 'objeto': 'Estadio', 'calle': 'Av. Álvarez Jonte', 'altura': 4180.0, 'barrio': 'Monte Castro', 'comuna': 'Comuna 10', 'codigo_postal': 1407.0, 'codigo_postal_argentino': 'C1407GOV'}</div>`)[0];
+                popup_900cfc67b41f341d87faada2fc12e241.setContent(html_9960a0acb61125458d983c80d36377b8);
+            
+        
+
+        marker_53dcfa8221cad34af19fc419c0bd6aa7.bindPopup(popup_900cfc67b41f341d87faada2fc12e241)
+        ;
+
+        
+    
+    
+            var marker_7da7717125f680c521f80e28dcb755cc = L.marker(
+                [-34.5949090421977, -58.4492738375116],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_46cbf1ebd79b39d21f704e4106f99007 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17af25e8898e4c3fd2bcde1d7aa7013e = $(`<div id="html_17af25e8898e4c3fd2bcde1d7aa7013e" style="width: 100.0%; height: 100.0%;">{'long': -58.4492738375116, 'lat': -34.5949090421977, 'id': 11, 'club': 'Club Atlético Atlanta', 'estadio': 'Don León Kolbowsky', 'web': 'http://www.caatlanta.com.ar/', 'facebook': 'https://www.facebook.com/ClubAtleticoAtlantaOficial', 'twitter': 'https://twitter.com/atlantaoficial', 'contacto': '4856-5999', 'objeto': 'Estadio', 'calle': 'Humboldt', 'altura': 374.0, 'barrio': 'Villa Crespo', 'comuna': 'Comuna 15', 'codigo_postal': 1414.0, 'codigo_postal_argentino': 'C1414CSH'}</div>`)[0];
+                popup_46cbf1ebd79b39d21f704e4106f99007.setContent(html_17af25e8898e4c3fd2bcde1d7aa7013e);
+            
+        
+
+        marker_7da7717125f680c521f80e28dcb755cc.bindPopup(popup_46cbf1ebd79b39d21f704e4106f99007)
+        ;
+
+        
+    
+    
+            var marker_4a50ea6f8397c7bc1894326066ebd54e = L.marker(
+                [-34.5411774563433, -58.461926529389],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_565b72388498653e085e694a3507d980 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_346ecbbc25db0a2c5cb9f45c18e0929b = $(`<div id="html_346ecbbc25db0a2c5cb9f45c18e0929b" style="width: 100.0%; height: 100.0%;">{'long': -58.461926529389, 'lat': -34.5411774563433, 'id': 12, 'club': 'Club Atlético Defensores de Belgrano', 'estadio': 'Juan Pasquale', 'web': 'http://www.defeweb.com.ar/', 'facebook': 'https://www.facebook.com/pages/Defensores-de-Belgrano/181270058574986', 'twitter': 'https://twitter.com/defeweb', 'contacto': '4702-8967', 'objeto': 'Estadio', 'calle': 'Av. Comodoro Rivadavia', 'altura': 1450.0, 'barrio': 'Nuñez', 'comuna': 'Comuna 13', 'codigo_postal': 1429.0, 'codigo_postal_argentino': 'C1429DBQ'}</div>`)[0];
+                popup_565b72388498653e085e694a3507d980.setContent(html_346ecbbc25db0a2c5cb9f45c18e0929b);
+            
+        
+
+        marker_4a50ea6f8397c7bc1894326066ebd54e.bindPopup(popup_565b72388498653e085e694a3507d980)
+        ;
+
+        
+    
+    
+            var marker_4d49b4c7ba4a0e017ab0046720d5ab6d = L.marker(
+                [-34.5588388531396, -58.4431557962165],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_66e1227ed451c2e2a566133b19166ca0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a572e8eb347eb10d4c0cdebf5e940c5 = $(`<div id="html_7a572e8eb347eb10d4c0cdebf5e940c5" style="width: 100.0%; height: 100.0%;">{'long': -58.4431557962165, 'lat': -34.5588388531396, 'id': 13, 'club': 'Club Atlético Excursionistas', 'estadio': 'Coliseo del Bajo Belgrano', 'web': 'http://www.excursionistas.org.ar/', 'facebook': 'https://www.facebook.com/ExcursioOficial', 'twitter': 'https://twitter.com/excursioOficial', 'contacto': '4788-8007', 'objeto': 'Estadio', 'calle': 'La Pampa', 'altura': 1376.0, 'barrio': 'Belgrano', 'comuna': 'Comuna 13', 'codigo_postal': 1428.0, 'codigo_postal_argentino': 'C1428DZB'}</div>`)[0];
+                popup_66e1227ed451c2e2a566133b19166ca0.setContent(html_7a572e8eb347eb10d4c0cdebf5e940c5);
+            
+        
+
+        marker_4d49b4c7ba4a0e017ab0046720d5ab6d.bindPopup(popup_66e1227ed451c2e2a566133b19166ca0)
+        ;
+
+        
+    
+    
+            var marker_7f99436c32522b3a3f942e83d0a7be7c = L.marker(
+                [-34.6475043768536, -58.3968611907066],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_2f21f5faa7f64162e9dd5836b5fba004 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c013b120d45fbfb1c4a22cdbdbe4a7e8 = $(`<div id="html_c013b120d45fbfb1c4a22cdbdbe4a7e8" style="width: 100.0%; height: 100.0%;">{'long': -58.3968611907066, 'lat': -34.6475043768536, 'id': 15, 'club': 'Club Atlético Barracas Central', 'estadio': 'Claudio Chiqui" Tapia\xa0"', 'web': 'http://www.barracascentral.com/', 'facebook': 'https://www.facebook.com/bcentral', 'twitter': 'https://twitter.com/barracascentral', 'contacto': '4301-5855', 'objeto': 'Estadio', 'calle': 'Olavarria y Luna', 'altura': nan, 'barrio': 'Barracas', 'comuna': 'Comuna 4', 'codigo_postal': 1437.0, 'codigo_postal_argentino': 'C1437FFC '}</div>`)[0];
+                popup_2f21f5faa7f64162e9dd5836b5fba004.setContent(html_c013b120d45fbfb1c4a22cdbdbe4a7e8);
+            
+        
+
+        marker_7f99436c32522b3a3f942e83d0a7be7c.bindPopup(popup_2f21f5faa7f64162e9dd5836b5fba004)
+        ;
+
+        
+    
+    
+            var marker_0e0be43e173c061798ac7c33e01e011a = L.marker(
+                [-34.5941414592145, -58.4884576852379],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_c04197c8bffa8d8090e2bcd185a52d29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61c9ecf674b6e6fc79ecf33a2a749858 = $(`<div id="html_61c9ecf674b6e6fc79ecf33a2a749858" style="width: 100.0%; height: 100.0%;">{'long': -58.4884576852379, 'lat': -34.5941414592145, 'id': 16, 'club': 'Club Comunicaciones', 'estadio': 'Alfredo Ramos', 'web': 'http://www.clubcomunicaciones.com.ar/', 'facebook': 'https://www.facebook.com/clubcomunicacionesoficial', 'twitter': 'https://twitter.com/ClubComu', 'contacto': '4504-5454\xa0', 'objeto': 'Estadio', 'calle': 'Tinogasta y Julio Cortázar', 'altura': nan, 'barrio': 'Agronomía', 'comuna': 'Comuna 15', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_c04197c8bffa8d8090e2bcd185a52d29.setContent(html_61c9ecf674b6e6fc79ecf33a2a749858);
+            
+        
+
+        marker_0e0be43e173c061798ac7c33e01e011a.bindPopup(popup_c04197c8bffa8d8090e2bcd185a52d29)
+        ;
+
+        
+    
+    
+            var marker_5a9caae278a9acdf036f52128dce5fb4 = L.marker(
+                [-34.6132869330386, -58.5156918286413],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_35a4a0e58c6cfd7f60de55d1c83642e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21ece626cc6a3cb1eb47491a6ca4197e = $(`<div id="html_21ece626cc6a3cb1eb47491a6ca4197e" style="width: 100.0%; height: 100.0%;">{'long': -58.5156918286413, 'lat': -34.6132869330386, 'id': 17, 'club': 'Club Atlético General Lamadrid', 'estadio': 'Estadio Enrique Sexto', 'web': 'http://www.lamadrid.org.ar/', 'facebook': 'https://www.facebook.com/PrensaLamadrid', 'twitter': 'https://twitter.com/Lamadridprensa', 'contacto': '4567-6239', 'objeto': 'Estadio', 'calle': 'Desaguadero', 'altura': 3180.0, 'barrio': 'Villa Devoto', 'comuna': 'Comuna 11', 'codigo_postal': 1417.0, 'codigo_postal_argentino': 'C1417BST'}</div>`)[0];
+                popup_35a4a0e58c6cfd7f60de55d1c83642e6.setContent(html_21ece626cc6a3cb1eb47491a6ca4197e);
+            
+        
+
+        marker_5a9caae278a9acdf036f52128dce5fb4.bindPopup(popup_35a4a0e58c6cfd7f60de55d1c83642e6)
+        ;
+
+        
+    
+    
+            var marker_a137f97d473fffb5e944031f2c1c5985 = L.marker(
+                [-34.5622382531287, -58.4302816630777],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_ad6e14c41992dac880a48d983c21896a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed18e92a299415ed0c46ac76dbad86ab = $(`<div id="html_ed18e92a299415ed0c46ac76dbad86ab" style="width: 100.0%; height: 100.0%;">{'long': -58.4302816630777, 'lat': -34.5622382531287, 'id': 18, 'club': 'Buenos Aires Lawn Tennis Club', 'estadio': 'Billoch Caride', 'web': 'http://www.baltc.net/', 'facebook': 'https://www.facebook.com/BuenosAiresLTC', 'twitter': nan, 'contacto': '4772 0983/ 9227', 'objeto': 'Estadio', 'calle': 'Olleros', 'altura': 1510.0, 'barrio': 'Palermo', 'comuna': 'Comuna 14', 'codigo_postal': 1426.0, 'codigo_postal_argentino': 'C1426CRB'}</div>`)[0];
+                popup_ad6e14c41992dac880a48d983c21896a.setContent(html_ed18e92a299415ed0c46ac76dbad86ab);
+            
+        
+
+        marker_a137f97d473fffb5e944031f2c1c5985.bindPopup(popup_ad6e14c41992dac880a48d983c21896a)
+        ;
+
+        
+    
+    
+            var marker_2ef135298da29fea9f84ba6331fbd61b = L.marker(
+                [-34.5715537662885, -58.4265618654418],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_cec2c3ef37761655ea84522e4f176109 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3acb60ae33e81b2b694336e3b06632e6 = $(`<div id="html_3acb60ae33e81b2b694336e3b06632e6" style="width: 100.0%; height: 100.0%;">{'long': -58.4265618654418, 'lat': -34.5715537662885, 'id': 19, 'club': 'Campo Argentino de Polo', 'estadio': '"La Catedral del Polo"', 'web': 'http://aapolo.com/', 'facebook': 'https://www.facebook.com/asociaciondepolo', 'twitter': 'https://twitter.com/asocdepolo', 'contacto': 'http://aapolo.com/contacto', 'objeto': 'Estadio', 'calle': 'Av. Del Libertador y Dorrego', 'altura': nan, 'barrio': 'Palermo', 'comuna': 'Comuna 14', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_cec2c3ef37761655ea84522e4f176109.setContent(html_3acb60ae33e81b2b694336e3b06632e6);
+            
+        
+
+        marker_2ef135298da29fea9f84ba6331fbd61b.bindPopup(popup_cec2c3ef37761655ea84522e4f176109)
+        ;
+
+        
+    
+    
+            var marker_30296a1619c0b4017354c3ff9d6cd425 = L.marker(
+                [-34.5680397371448, -58.4194699085156],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_4c7156bd8e0f94a978dd8aaecacd166b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9d8b48b11f25fa1c1b5de56a71236af = $(`<div id="html_f9d8b48b11f25fa1c1b5de56a71236af" style="width: 100.0%; height: 100.0%;">{'long': -58.4194699085156, 'lat': -34.5680397371448, 'id': 20, 'club': 'GEBA (sede Jorge Newbery)', 'estadio': nan, 'web': 'http://www.portaldegeba.com/', 'facebook': 'https://www.facebook.com/ClubdeGimnasiayEsgrima', 'twitter': 'https://twitter.com/gebaoficial', 'contacto': '4382-0031/34', 'objeto': 'Estadio', 'calle': 'Marcelino Freyre', 'altura': 3831.0, 'barrio': 'Palermo', 'comuna': 'Comuna 14', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_4c7156bd8e0f94a978dd8aaecacd166b.setContent(html_f9d8b48b11f25fa1c1b5de56a71236af);
+            
+        
+
+        marker_30296a1619c0b4017354c3ff9d6cd425.bindPopup(popup_4c7156bd8e0f94a978dd8aaecacd166b)
+        ;
+
+        
+    
+    
+            var marker_8cbbaad6eb671b38e1fd8022750755d8 = L.marker(
+                [-34.6320312231714, -58.3658495825069],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_975c0f3618cf787df5c7b5537136218f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca26bb2d12b6242096ef86e7c05f28e4 = $(`<div id="html_ca26bb2d12b6242096ef86e7c05f28e4" style="width: 100.0%; height: 100.0%;">{'long': -58.3658495825069, 'lat': -34.6320312231714, 'id': 21, 'club': 'Club Atlético Boca Juniors', 'estadio': 'Microestadio Luis Conde', 'web': 'http://www.bocajuniors.com.ar/', 'facebook': 'https://www.facebook.com/BocaJuniors', 'twitter': 'https://twitter.com/BocaJrsOficial', 'contacto': '5777-1200', 'objeto': 'Estadio', 'calle': 'Arzobispo Espinosa', 'altura': 600.0, 'barrio': 'Boca', 'comuna': 'Comuna 4', 'codigo_postal': 1157.0, 'codigo_postal_argentino': 'C1157AAL'}</div>`)[0];
+                popup_975c0f3618cf787df5c7b5537136218f.setContent(html_ca26bb2d12b6242096ef86e7c05f28e4);
+            
+        
+
+        marker_8cbbaad6eb671b38e1fd8022750755d8.bindPopup(popup_975c0f3618cf787df5c7b5537136218f)
+        ;
+
+        
+    
+    
+            var marker_cd12276080f686ea4ffdc6f3b9b4d221 = L.marker(
+                [-34.602620813573, -58.3684286442721],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_1264ed1cc8470e1151ba9559dd53f98f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3333f3494fcabed51de327f6b2aedae6 = $(`<div id="html_3333f3494fcabed51de327f6b2aedae6" style="width: 100.0%; height: 100.0%;">{'long': -58.3684286442721, 'lat': -34.602620813573, 'id': 22, 'club': 'Luna Park', 'estadio': nan, 'web': 'http://www.lunapark.com.ar/', 'facebook': 'https://www.facebook.com/stadiumLunaPark', 'twitter': 'https://twitter.com/stadiumlunapark', 'contacto': '5279-5279', 'objeto': 'Estadio', 'calle': 'Av. Madero', 'altura': 420.0, 'barrio': 'San Nicolas', 'comuna': 'Comuna 1', 'codigo_postal': 1106.0, 'codigo_postal_argentino': 'C1106ACR'}</div>`)[0];
+                popup_1264ed1cc8470e1151ba9559dd53f98f.setContent(html_3333f3494fcabed51de327f6b2aedae6);
+            
+        
+
+        marker_cd12276080f686ea4ffdc6f3b9b4d221.bindPopup(popup_1264ed1cc8470e1151ba9559dd53f98f)
+        ;
+
+        
+    
+    
+            var marker_3462fd21b81707ce5b6a9dfc8086d3dd = L.marker(
+                [-34.6771768435592, -58.446196583368],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_2095ef567573f4bfe5ceb9fd3f45d5bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d97b60f79047a14dac174192e362245 = $(`<div id="html_5d97b60f79047a14dac174192e362245" style="width: 100.0%; height: 100.0%;">{'long': -58.446196583368, 'lat': -34.6771768435592, 'id': 23, 'club': 'Estadio Mary Terán de Weiss', 'estadio': nan, 'web': 'http://www.buenosaires.gob.ar/corporacionsur/iniciativasdelacorporacion/parque-roca-sector-c', 'facebook': nan, 'twitter': nan, 'contacto': nan, 'objeto': 'Estadio', 'calle': 'Av. Roca', 'altura': 3490.0, 'barrio': 'Villa Soldati', 'comuna': 'Comuna 8', 'codigo_postal': 1437.0, 'codigo_postal_argentino': 'C1437KAN'}</div>`)[0];
+                popup_2095ef567573f4bfe5ceb9fd3f45d5bd.setContent(html_5d97b60f79047a14dac174192e362245);
+            
+        
+
+        marker_3462fd21b81707ce5b6a9dfc8086d3dd.bindPopup(popup_2095ef567573f4bfe5ceb9fd3f45d5bd)
+        ;
+
+        
+    
+    
+            var marker_0812a3a9862f3243a3142665b4c6bd1c = L.marker(
+                [-34.545537538516, -58.4581218521634],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_6348cfd364741036e1945922c3cf4452 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92cd94468ea738afbdbb3a93fa83ed2e = $(`<div id="html_92cd94468ea738afbdbb3a93fa83ed2e" style="width: 100.0%; height: 100.0%;">{'long': -58.4581218521634, 'lat': -34.545537538516, 'id': 24, 'club': 'Club Atlético Obras Sanitarias de la Nación', 'estadio': nan, 'web': 'http://www.obrasclub.com.ar/', 'facebook': 'https://www.facebook.com/ClubObras', 'twitter': 'https://twitter.com/clubobras', 'contacto': '4702-4655/4702-9467', 'objeto': 'Estadio', 'calle': 'Avenida del Libertador', 'altura': 7395.0, 'barrio': 'Nuñez', 'comuna': 'Comuna 13', 'codigo_postal': 1429.0, 'codigo_postal_argentino': 'C1429BMG'}</div>`)[0];
+                popup_6348cfd364741036e1945922c3cf4452.setContent(html_92cd94468ea738afbdbb3a93fa83ed2e);
+            
+        
+
+        marker_0812a3a9862f3243a3142665b4c6bd1c.bindPopup(popup_6348cfd364741036e1945922c3cf4452)
+        ;
+
+        
+    
+    
+            var marker_0916c8c48c9344fed2d8404ecbd79e11 = L.marker(
+                [-34.6533406140494, -58.443404135619],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_7400cffd64d641fe5897d8012b5bb3ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_209ed70934ecac15e5abee211ac52b69 = $(`<div id="html_209ed70934ecac15e5abee211ac52b69" style="width: 100.0%; height: 100.0%;">{'long': -58.443404135619, 'lat': -34.6533406140494, 'id': 25, 'club': 'Deportivo Riestra Asociación de Fomento Barrio Colón', 'estadio': 'Guillermo Laza', 'web': 'http://www.mundoriestra.com.ar/', 'facebook': 'https://www.facebook.com/deportivoriestra', 'twitter': 'https://twitter.com/prensariestra', 'contacto': '4921-7657 / 4918-0455', 'objeto': 'Estadio', 'calle': 'Av. Ana M. Janer y Varela', 'altura': nan, 'barrio': 'Villa Soldati', 'comuna': 'Comuna 8', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_7400cffd64d641fe5897d8012b5bb3ff.setContent(html_209ed70934ecac15e5abee211ac52b69);
+            
+        
+
+        marker_0916c8c48c9344fed2d8404ecbd79e11.bindPopup(popup_7400cffd64d641fe5897d8012b5bb3ff)
+        ;
+
+        
+    
+    
+            var marker_75242758170ab2ec30bc9c2b68114484 = L.marker(
+                [-34.5919053134849, -58.471469748784],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_1508c75c928ce95da5b28a97e1d27a4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a6f1c6bd36377932349b0e3cd55b411 = $(`<div id="html_7a6f1c6bd36377932349b0e3cd55b411" style="width: 100.0%; height: 100.0%;">{'long': -58.471469748784, 'lat': -34.5919053134849, 'id': 26, 'club': 'Asociación Atlética Argentinos Juniors', 'estadio': 'Microestadio Malvinas Argentinas', 'web': 'https://www.argentinosjuniors.com.ar/', 'facebook': 'https://www.facebook.com/AAAJOficial', 'twitter': 'https://twitter.com/PrensaAAAJ', 'contacto': '4552-5603/4551-6887', 'objeto': 'Estadio', 'calle': 'Gutemberg', 'altura': 350.0, 'barrio': 'Paternal', 'comuna': 'Comuna 15', 'codigo_postal': 1427.0, 'codigo_postal_argentino': 'C1427CQD'}</div>`)[0];
+                popup_1508c75c928ce95da5b28a97e1d27a4c.setContent(html_7a6f1c6bd36377932349b0e3cd55b411);
+            
+        
+
+        marker_75242758170ab2ec30bc9c2b68114484.bindPopup(popup_1508c75c928ce95da5b28a97e1d27a4c)
+        ;
+
+        
+    
+    
+            var marker_a733c2146b09a139d1b10d83132aa0a5 = L.marker(
+                [-34.5464263236206, -58.4486371840027],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_6b609d850733c39a46d874236aa0a070 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afe3e0e687f54a1445f8b6145df90c37 = $(`<div id="html_afe3e0e687f54a1445f8b6145df90c37" style="width: 100.0%; height: 100.0%;">{'long': -58.4486371840027, 'lat': -34.5464263236206, 'id': 27, 'club': 'Club Atletico River Plate', 'estadio': 'Microestadio River Plate', 'web': 'http://www.cariverplate.com.ar/', 'facebook': 'https://www.facebook.com/riverplateoficial', 'twitter': 'https://twitter.com/@CARPoficial', 'contacto': '4789 1200', 'objeto': 'Estadio', 'calle': 'Av. Figueroa Alcorta', 'altura': 7597.0, 'barrio': 'Belgrano', 'comuna': 'Comuna 13', 'codigo_postal': 1428.0, 'codigo_postal_argentino': 'C1428BCL'}</div>`)[0];
+                popup_6b609d850733c39a46d874236aa0a070.setContent(html_afe3e0e687f54a1445f8b6145df90c37);
+            
+        
+
+        marker_a733c2146b09a139d1b10d83132aa0a5.bindPopup(popup_6b609d850733c39a46d874236aa0a070)
+        ;
+
+        
+    
+    
+            var marker_6bb2a20b8e7d881be9e80051e85d9714 = L.marker(
+                [-34.6185215731039, -58.4488352829472],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_f02c2cde28206c2e31db3dce19b7fab7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f5ce1c7a9692e94b8c02218a65aa6d2 = $(`<div id="html_7f5ce1c7a9692e94b8c02218a65aa6d2" style="width: 100.0%; height: 100.0%;">{'long': -58.4488352829472, 'lat': -34.6185215731039, 'id': 28, 'club': 'Club Ferro Carril Oeste', 'estadio': 'Hector Etchart', 'web': 'http://www.ferrocarriloeste.org.ar/', 'facebook': 'https://www.facebook.com/FerroOficial', 'twitter': 'https://twitter.com/FerroOficial', 'contacto': '4431-8282', 'objeto': 'Estadio', 'calle': 'Av. Avellaneda', 'altura': 1240.0, 'barrio': 'Caballito', 'comuna': 'Comuna 6', 'codigo_postal': 1405.0, 'codigo_postal_argentino': 'C1405CNZ'}</div>`)[0];
+                popup_f02c2cde28206c2e31db3dce19b7fab7.setContent(html_7f5ce1c7a9692e94b8c02218a65aa6d2);
+            
+        
+
+        marker_6bb2a20b8e7d881be9e80051e85d9714.bindPopup(popup_f02c2cde28206c2e31db3dce19b7fab7)
+        ;
+
+        
+    
+    
+            var marker_e3cfe4f88feeab2e836d65536c573db0 = L.marker(
+                [-34.5463295667752, -58.456713141317],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_725b3a52ad02905c1055e42e7affbdf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec418a6ac770f9d8bedbd2b54dbd5de = $(`<div id="html_3ec418a6ac770f9d8bedbd2b54dbd5de" style="width: 100.0%; height: 100.0%;">{'long': -58.456713141317, 'lat': -34.5463295667752, 'id': 29, 'club': 'Centro Nacional de Alto Rendimiento Deportivo', 'estadio': 'Cenard', 'web': 'http://www.deportes.gov.ar/\xa0', 'facebook': 'www.facebook.com/CeNARD.Argentina', 'twitter': nan, 'contacto': '4704-1600/84/85', 'objeto': 'Estadio', 'calle': 'Av. Miguel Sánchez', 'altura': 1050.0, 'barrio': 'Nuñez', 'comuna': 'Comuna 13', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_725b3a52ad02905c1055e42e7affbdf8.setContent(html_3ec418a6ac770f9d8bedbd2b54dbd5de);
+            
+        
+
+        marker_e3cfe4f88feeab2e836d65536c573db0.bindPopup(popup_725b3a52ad02905c1055e42e7affbdf8)
+        ;
+
+        
+    
+    
+            var marker_26c00c1ec77a154b0983555dc1a25c4e = L.marker(
+                [-34.698094232851, -58.4679400686761],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_bfd07cc55946afbe52929b7970fa08be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d91ff2c9b4f8afbd2b99596e5a03c8c = $(`<div id="html_7d91ff2c9b4f8afbd2b99596e5a03c8c" style="width: 100.0%; height: 100.0%;">{'long': -58.4679400686761, 'lat': -34.698094232851, 'id': 30, 'club': 'Autodromo Oscar y Juan Galvez', 'estadio': nan, 'web': 'http://www.autodromoba.com.ar/', 'facebook': 'https://www.facebook.com/pages/Aut%C3%B3dromo-de-Buenos-Aires-Oscar-y-Juan-G%C3%A1lvez-Oficial/151530198244691?fref=photo', 'twitter': nan, 'contacto': '4604-9100', 'objeto': 'Estadio', 'calle': 'Av. Coronel Roca y Gral. Paz', 'altura': nan, 'barrio': 'Villa Riachuelo', 'comuna': 'Comuna 8', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_bfd07cc55946afbe52929b7970fa08be.setContent(html_7d91ff2c9b4f8afbd2b99596e5a03c8c);
+            
+        
+
+        marker_26c00c1ec77a154b0983555dc1a25c4e.bindPopup(popup_bfd07cc55946afbe52929b7970fa08be)
+        ;
+
+        
+    
+    
+            var marker_cae18dd59f306d5539e5b6be6109218e = L.marker(
+                [-34.6645727780083, -58.4518961450275],
+                {}
+            ).addTo(marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f);
+        
+    
+        var popup_3b5986aa51cb05f02e14bd6b6d48f76c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d389cf96c27aa7a131279ad83f314fa = $(`<div id="html_3d389cf96c27aa7a131279ad83f314fa" style="width: 100.0%; height: 100.0%;">{'long': -58.4518961450275, 'lat': -34.6645727780083, 'id': 14, 'club': 'Sacachispas Fútbol Club', 'estadio': '“Beto” Larrosa', 'web': 'info@pasionlila.com.ar', 'facebook': 'https://www.facebook.com/sacachispaspasion', 'twitter': 'https://twitter.com/Sacapasion', 'contacto': '4919-1152', 'objeto': 'Estadio', 'calle': 'Av. Lacarra entre Av. Fco. Fernández. de la Cruz y José Barros Pazos', 'altura': nan, 'barrio': 'Villa Soldati', 'comuna': 'Comuna 8', 'codigo_postal': nan, 'codigo_postal_argentino': nan}</div>`)[0];
+                popup_3b5986aa51cb05f02e14bd6b6d48f76c.setContent(html_3d389cf96c27aa7a131279ad83f314fa);
+            
+        
+
+        marker_cae18dd59f306d5539e5b6be6109218e.bindPopup(popup_3b5986aa51cb05f02e14bd6b6d48f76c)
+        ;
+
+        
+    
+    
+            marker_cluster_f974a4f6bcd17d84a5da85d75cf0608f.addTo(map_83894e4cf4ee32c06aa466a42b1c96f4);
+        
+</script>
+</html>
